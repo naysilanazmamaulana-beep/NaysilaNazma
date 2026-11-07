@@ -1,476 +1,483 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b10">
 
-    <title>Portofolio | Naysila Nazma Maulana</title>
+  <title>Portofolio | Naysila Nazma Maulana</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="page-progress" id="pageProgress"></div>
 
-    <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <span>NS</span>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">NNM<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#pendidikan" class="nav-link">Pendidikan</a>
+        <a href="#jadwal" class="nav-link">Jadwal</a>
+        <a href="#kontak" class="nav-link nav-cta">Kontak ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="hero-topline">
+        <span>PORTOFOLIO PRIBADI</span>
+        <span>2026 — 2027</span>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          HALO, SELAMAT DATANG
+        </p>
+
+        <h1>Naysila Nazma<br><span>Maulana.</span></h1>
+
+        <p class="hero-role">
+          Graphic Designer <span>·</span> Multimedia Student
+        </p>
+
+        <p class="hero-description">
+          Saya mahasiswa UNIVERSITAS BOASH jurusan Teknologi Rekayasa Multimedia,
+          yang tertarik pada desain grafis, multimedia, dan teknologi. 
+          Saya senang mengeksplorasi ide baru,mengembangkan kreativitas, 
+          dan membuat karya visual yang menarik.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#tentang" class="btn btn-primary">
+            Kenali Saya <span>↘</span>
+          </a>
+          <a href="#kontak" class="btn btn-secondary">
+            Hubungi Saya <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Foto profil berada di tengah bawah teks -->
+      <div class="hero-profile">
+        <div class="profile-label profile-label-left">
+          <span class="label-line"></span>
+          <span>PROFILE</span>
+        </div>
+
+        <div class="profile-frame" id="profileCard">
+          <div class="profile-backdrop"></div>
+
+          <img
+            src="gambar.jpg.jpeg"
+            alt="Foto profil Naysila Nazma Maulana"
+            class="profile-img"
+            id="profileImage"
+          >
+
+          <span class="profile-corner corner-tl"></span>
+          <span class="profile-corner corner-tr"></span>
+          <span class="profile-corner corner-bl"></span>
+          <span class="profile-corner corner-br"></span>
+        </div>
+
+        <div class="profile-label profile-label-right">
+          <span class="profile-number">NNM</span>
+          <span>DESAIN · MULTIMEDIA</span>
+        </div>
+      </div>
+
+      <div class="hero-bottomline">
+        <span>BERKARYA DENGAN KREATIVITAS</span>
+        <a href="#tentang">SCROLL UNTUK MELIHAT <span>↓</span></a>
+      </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section class="section about-section" id="tentang">
+      <div class="section-heading">
+        <p class="section-label">01 — TENTANG SAYA</p>
+        <h2>Mengenal saya<br>lebih <span>dekat.</span></h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-index">NNM</div>
+
+        <div class="about-content">
+          <p class="about-lead">
+            Saya adalah mahasiswa yang memiliki ketertarikan pada dunia
+            desain grafis, multimedia, dan perkembangan teknologi.
+          </p>
+
+          <p>
+            Saya senang mengerjakan desain, mengedit foto, serta mencoba
+            berbagai proyek multimedia. Bagi saya, setiap proyek merupakan
+            kesempatan untuk mempelajari hal baru dan meningkatkan kemampuan.
+          </p>
+
+          <div class="goal-box">
+            <span class="goal-icon">↗</span>
+            <div>
+              <h3>Tujuan Saya</h3>
+              <p>
+                Mengembangkan keterampilan kreatif dan teknologi untuk
+                menghasilkan karya yang bermanfaat.
+              </p>
             </div>
-
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#education">Pendidikan</a></li>
-                <li><a href="#schedule">Jadwal</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <main>
-
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-
-            <div class="hero-text">
-
-                <p class="small-title">HELLO, I'M</p>
-
-                <h1>Naysila Nazma Maulana</h1>
-
-                <h2>Graphic Designer & Multimedia Student</h2>
-
-                <p>
-                    Saya adalah mahasiswa UNIVERSITAS BOASH yang memiliki ketertarikan
-                    pada dunia desain grafis, multimedia, dan teknologi.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#about" class="btn primary">
-                        Tentang Saya
-                    </a>
-
-                    <a href="#contact" class="btn secondary">
-                        Hubungi Saya
-                    </a>
-                </div>
-
-            </div>
-
-
-            <div class="profile-container">
-
-                <div class="profile-circle"></div>
-
-                <img src="gambar.jpg.jpeg"
-                width="300" height="330">
-
-            </div>
-
-        </section>
-
-
-        <!-- About -->
-        <section id="about" class="section">
-
-            <div class="section-title">
-                <p>ABOUT ME</p>
-                <h2>Tentang Saya</h2>
-            </div>
-
-            <div class="about-content">
-
-                <div class="about-text">
-
-                    <h3>Perkenalkan, saya Naysila</h3>
-
-                    <p>
-                        Saya merupakan mahasiswa yang memiliki minat
-                        dalam bidang desain grafis dan multimedia.
-                        Saya senang mempelajari hal-hal baru terutama
-                        yang berkaitan dengan teknologi dan kreativitas.
-                    </p>
-
-                    <p>
-                        Dalam mengembangkan kemampuan, saya terbiasa
-                        mengerjakan berbagai tugas desain, editing foto, 
-                        serta proyek multimedia.
-                        Saya juga memiliki semangat untuk terus belajar
-                        dan meningkatkan kemampuan saya.
-                    </p>
-
-                    <h4>Tujuan Saya</h4>
-
-                    <p>
-                        Tujuan saya adalah mengembangkan kemampuan
-                        kreatif dan teknologi sehingga dapat menghasilkan
-                        karya yang menarik, bermanfaat, dan profesional.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Education -->
-        <section id="education" class="section dark-section">
-
-            <div class="section-title">
-                <p>EDUCATION</p>
-                <h2>Riwayat Pendidikan</h2>
-            </div>
-
-            <div class="education-card">
-
-                <ol>
-
-                    <li>
-                        <strong>SD</strong>
-                        <span>SDN BANTARKAMBING 1</span>
-                    </li>
-
-                    <li>
-                        <strong>SMP</strong>
-                        <span>SMPN 1 RANCABUNGUR</span>
-                    </li>
-
-                    <li>
-                        <strong>SMK</strong>
-                        <span>SMK BOASH 1</span>
-                    </li>
-
-                    <li>
-                        <strong>Perguruan Tinggi</strong>
-                        <span>UNIVERSITAS BOASH</span>
-                    </li>
-
-                </ol>
-
-            </div>
-
-        </section>
-
-
-        <!-- Skills & Hobby -->
-        <section class="section">
-
-            <div class="section-title">
-                <p>MY SKILLS</p>
-                <h2>Hobi & Keahlian</h2>
-            </div>
-
-
-            <div class="skills-container">
-
-                <div class="skill-card">
-
-                    <div class="icon">🎨</div>
-
-                    <h3>Desain Grafis</h3>
-
-                    <p>
-                        Membuat desain visual, poster,
-                        logo, dan berbagai kebutuhan grafis.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="icon">🎬</div>
-
-                    <h3>Multimedia</h3>
-
-                    <p>
-                        Memiliki ketertarikan pada editing foto,
-                        video, dan pembuatan konten multimedia.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="hobby-box">
-
-                <h3>Hobi Saya</h3>
-
-                <ul>
-                    <li>Mendengarkan Musik</li>
-                    <li>Menari</li>
-                    <li>Menonton Film</li>
-                </ul>
-
-            </div>
-
-        </section>
-
-<!-- =========================
-     JADWAL KULIAH
-========================= -->
-
-<section id="schedule" class="schedule-section">
-
-    <div class="section-title">
-        <p>MY SCHEDULE</p>
-        <h2>Jadwal Kuliah</h2>
-        <span>Semester 2026/2027</span>
-    </div>
-
-    <div class="table-wrapper">
-
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENDIDIKAN -->
+    <section class="section education-section" id="pendidikan">
+      <div class="section-heading">
+        <p class="section-label">02 — PERJALANAN</p>
+        <h2>Riwayat <span>pendidikan.</span></h2>
+        <p class="section-caption">
+          Langkah belajar yang membentuk perjalanan saya hingga saat ini.
+        </p>
+      </div>
+
+      <div class="education-grid">
+        <article class="education-card reveal">
+          <span class="education-number">01</span>
+          <span class="education-symbol">○</span>
+          <p class="education-level">SEKOLAH DASAR</p>
+          <h3>SDN Bantarkambing 1</h3>
+          <span class="education-arrow">↗</span>
+        </article>
+
+        <article class="education-card reveal">
+          <span class="education-number">02</span>
+          <span class="education-symbol">◇</span>
+          <p class="education-level">SEKOLAH MENENGAH PERTAMA</p>
+          <h3>SMPN 1 Rancabungur</h3>
+          <span class="education-arrow">↗</span>
+        </article>
+
+        <article class="education-card reveal">
+          <span class="education-number">03</span>
+          <span class="education-symbol">△</span>
+          <p class="education-level">SEKOLAH MENENGAH KEJURUAN</p>
+          <h3>SMK BOASH 1</h3>
+          <span class="education-arrow">↗</span>
+        </article>
+
+        <article class="education-card education-current reveal">
+          <span class="education-number">04</span>
+          <span class="education-symbol">✳</span>
+          <p class="education-level">PERGURUAN TINGGI</p>
+          <h3>Universitas BOASH</h3>
+          <span class="education-current-label">SAAT INI</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILL DAN HOBI -->
+    <section class="section skills-section" id="keahlian">
+      <div class="section-heading">
+        <p class="section-label">03 — KEMAMPUAN & MINAT</p>
+        <h2>Hal yang saya <span>tekuni.</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-top">
+            <span class="skill-icon">✳</span>
+            <span class="card-number">SKILL / 01</span>
+          </div>
+
+          <h3>Desain Grafis</h3>
+          <p>
+            Membuat desain visual, poster, logo, dan kebutuhan grafis lainnya.
+          </p>
+
+          <div class="skill-tags">
+            <span>Visual</span>
+            <span>Layout</span>
+            <span>Desain</span>
+          </div>
+        </article>
+
+        <article class="skill-card reveal">
+          <div class="skill-top">
+            <span class="skill-icon">▧</span>
+            <span class="card-number">SKILL / 02</span>
+          </div>
+
+          <h3>Multimedia</h3>
+          <p>
+            Mengedit foto dan video serta mengembangkan konten multimedia.
+          </p>
+
+          <div class="skill-tags">
+            <span>Foto</span>
+            <span>Video</span>
+            <span>Konten</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="hobby-panel">
+        <div>
+          <p class="section-label">DI LUAR AKTIVITAS BELAJAR</p>
+          <h3>Hal yang saya <span>sukai.</span></h3>
+        </div>
+
+        <div class="hobby-list">
+          <div class="hobby-item">
+            <span>01</span> Mendengarkan Musik <span>♫</span>
+          </div>
+          <div class="hobby-item">
+            <span>02</span> Menari <span>✳</span>
+          </div>
+          <div class="hobby-item">
+            <span>03</span> Menonton Film <span>▹</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JADWAL KULIAH -->
+    <section class="section schedule-section" id="jadwal">
+      <div class="section-heading">
+        <p class="section-label">04 — AKTIVITAS AKADEMIK</p>
+        <h2>Jadwal <span>kuliah.</span></h2>
+        <p class="section-caption">
+          Semester 2026/2027 · 7 mata kuliah · 19 SKS
+        </p>
+      </div>
+
+      <div class="schedule-summary">
+        <div class="summary-card">
+          <span class="summary-number">07</span>
+          <span>Mata Kuliah</span>
+        </div>
+
+        <div class="summary-card">
+          <span class="summary-number">19</span>
+          <span>Total SKS</span>
+        </div>
+
+        <div class="summary-card">
+          <span class="summary-number">02</span>
+          <span>Hari Kuliah</span>
+        </div>
+      </div>
+
+      <div class="schedule-toolbar">
+        <label class="search-box">
+          <span>⌕</span>
+          <input
+            type="search"
+            id="scheduleSearch"
+            placeholder="Cari mata kuliah atau dosen..."
+            aria-label="Cari jadwal kuliah"
+          >
+        </label>
+
+        <div class="schedule-filters">
+          <button class="filter-btn active" data-day="all">Semua</button>
+          <button class="filter-btn" data-day="Jumat">Jumat</button>
+          <button class="filter-btn" data-day="Sabtu">Sabtu</button>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
         <table class="schedule-table">
-
-            <thead>
-                <tr>
-                    <th rowspan="2">No.</th>
-                    <th rowspan="2">Hari</th>
-                    <th rowspan="2">Waktu</th>
-
-                    <th colspan="2">Mata Kuliah</th>
-
-                    <th rowspan="2">SKS</th>
-                    <th rowspan="2">Dosen Pengajar</th>
-                </tr>
-
-                <tr>
-                    <th>Kode</th>
-                    <th>Nama</th>
-                </tr>
-            </thead>
-
-
-            <tbody>
-
-                <!-- JUMAT -->
-
-                <tr>
-                    <td>1</td>
-
-                    <td rowspan="2" class="day">
-                        Jumat
-                    </td>
-
-                    <td>17.00 - 19.00</td>
-
-                    <td>KK230007</td>
-
-                    <td>Probabilitas dan Statistika</td>
-
-                    <td>2</td>
-
-                    <td>
-                        Joy Lawa Rizky, A.Md.T, S.Kom., M.Kom
-                    </td>
-                </tr>
-
-
-                <tr class="highlight">
-                    <td>2</td>
-
-                    <td>19.00 - 21.00</td>
-
-                    <td>PK230006</td>
-
-                    <td>
-                        Kepemimpinan dan Kewirausahaan
-                    </td>
-
-                    <td>2</td>
-
-                    <td>
-                        Dr. Jumadi SE
-                    </td>
-                </tr>
-
-
-                <!-- SABTU -->
-
-                <tr>
-                    <td>3</td>
-
-                    <td rowspan="5" class="day">
-                        Sabtu
-                    </td>
-
-                    <td>08.00 - 10.00</td>
-
-                    <td>KB230003</td>
-
-                    <td>
-                        Visualisasi dan Animasi 3D
-                    </td>
-
-                    <td>3</td>
-
-                    <td>
-                        Hersanto Fajri, S.Ds., MMD.
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td>4</td>
-
-                    <td>10.00 - 12.00</td>
-
-                    <td>KB230002</td>
-
-                    <td>Audio Visual</td>
-
-                    <td>3</td>
-
-                    <td>
-                        Hersanto Fajri, S.Ds., MMD.
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td>5</td>
-
-                    <td>13.00 - 15.00</td>
-
-                    <td>KB230005</td>
-
-                    <td>
-                        Grafika Komputer dan Pengolahan Citra
-                    </td>
-
-                    <td>3</td>
-
-                    <td>
-                        Marastika Aji Bawono S.Kom, M.Kom, MM
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td>6</td>
-
-                    <td>15.00 - 17.00</td>
-
-                    <td>KK230007</td>
-
-                    <td>
-                        Pemrograman Berorientasi Objek
-                    </td>
-
-                    <td>3</td>
-
-                    <td>
-                        Joy Lawa Rizky, A.Md.T, S.Kom., M.Kom
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td>7</td>
-
-                    <td>19.00 - 21.00</td>
-
-                    <td>KB230004</td>
-
-                    <td>
-                        Pemrograman Berbasis Web
-                    </td>
-
-                    <td>3</td>
-
-                    <td>
-                        Shofyan S.Kom M.Kom
-                    </td>
-                </tr>
-
-
-                <!-- TOTAL -->
-
-                <tr class="total-row">
-
-                    <td colspan="5">
-                        Total Mata Kuliah : <strong>7</strong>
-                    </td>
-
-                    <td>
-                        <strong>19</strong>
-                    </td>
-
-                    <td>
-                        <strong>Total SKS : 19</strong>
-                    </td>
-
-                </tr>
-
-            </tbody>
-
+          <thead>
+            <tr>
+              <th>Hari / Waktu</th>
+              <th>Mata Kuliah</th>
+              <th>Dosen</th>
+              <th>SKS</th>
+            </tr>
+          </thead>
+
+          <tbody id="scheduleBody">
+            <tr data-day="Jumat">
+              <td>
+                <span class="day-badge">Jumat</span>
+                <small>17.00–19.00</small>
+              </td>
+              <td>
+                <span class="course-code">KK230007</span>
+                <span class="course-name">Probabilitas dan Statistika</span>
+              </td>
+              <td>Joy Lawa Rizky, A.Md.T, S.Kom., M.Kom</td>
+              <td>2</td>
+            </tr>
+
+            <tr data-day="Jumat">
+              <td>
+                <span class="day-badge">Jumat</span>
+                <small>19.00–21.00</small>
+              </td>
+              <td>
+                <span class="course-code">PK230006</span>
+                <span class="course-name">Kepemimpinan dan Kewirausahaan</span>
+              </td>
+              <td>Dr. Jumadi, SE.</td>
+              <td>2</td>
+            </tr>
+
+            <tr data-day="Sabtu">
+              <td>
+                <span class="day-badge">Sabtu</span>
+                <small>08.00–10.00</small>
+              </td>
+              <td>
+                <span class="course-code">KB230003</span>
+                <span class="course-name">Visualisasi dan Animasi 3D</span>
+              </td>
+              <td>Hersanto Fajri, S.Ds., MMD.</td>
+              <td>3</td>
+            </tr>
+
+            <tr data-day="Sabtu">
+              <td>
+                <span class="day-badge">Sabtu</span>
+                <small>10.00–12.00</small>
+              </td>
+              <td>
+                <span class="course-code">KB230002</span>
+                <span class="course-name">Audio Visual</span>
+              </td>
+              <td>Hersanto Fajri, S.Ds., MMD.</td>
+              <td>3</td>
+            </tr>
+
+            <tr data-day="Sabtu">
+              <td>
+                <span class="day-badge">Sabtu</span>
+                <small>13.00–15.00</small>
+              </td>
+              <td>
+                <span class="course-code">KB230005</span>
+                <span class="course-name">Grafika Komputer dan Pengolahan Citra</span>
+              </td>
+              <td>Marastika Aji Bawono, S.Kom., M.Kom., MM</td>
+              <td>3</td>
+            </tr>
+
+            <tr data-day="Sabtu">
+              <td>
+                <span class="day-badge">Sabtu</span>
+                <small>15.00–17.00</small>
+              </td>
+              <td>
+                <span class="course-code">KK230007</span>
+                <span class="course-name">Pemrograman Berorientasi Objek</span>
+              </td>
+              <td>Joy Lawa Rizky, A.Md.T, S.Kom., M.Kom</td>
+              <td>3</td>
+            </tr>
+
+            <tr data-day="Sabtu">
+              <td>
+                <span class="day-badge">Sabtu</span>
+                <small>19.00–21.00</small>
+              </td>
+              <td>
+                <span class="course-code">KB230004</span>
+                <span class="course-name">Pemrograman Berbasis Web</span>
+              </td>
+              <td>Shofyan, S.Kom., M.Kom.</td>
+              <td>3</td>
+            </tr>
+          </tbody>
         </table>
 
-    </div>
+        <p class="empty-state" id="emptyState" hidden>
+          Jadwal tidak ditemukan.
+        </p>
+      </div>
 
-        </section>
+      <p class="schedule-note">
+        * Periksa kembali jadwal resmi kampus apabila terdapat perubahan.
+      </p>
+    </section>
 
+    <!-- KONTAK -->
+    <section class="section contact-section" id="kontak">
+      <p class="section-label">05 — HUBUNGI SAYA</p>
 
-        <!-- Contact -->
-<section id="contact" class="section contact">
+      <div class="contact-layout">
+        <div>
+          <h2>Mari terhubung<br>dan <span>berkenalan.</span></h2>
 
-    <div class="section-title">
-        <p>CONTACT ME</p>
-        <h2>Hubungi Saya</h2>
-    </div>
+          <p class="contact-description">
+            Terima kasih telah mengunjungi portofolio saya.
+            Silakan hubungi saya melalui email atau Instagram.
+          </p>
+        </div>
 
-    <p class="contact-description">
-        Jika ingin menghubungi saya atau ingin bekerja sama,
-        silakan gunakan salah satu kontak di bawah ini.
-    </p>
+        <div class="social-links">
+          <a class="social-card" href="mailto:naysilanazmamaulana@gmail.com">
+            <span class="social-icon">✉</span>
+            <span class="social-copy">
+              <small>EMAIL</small>
+              <strong>naysilanazmamaulana@gmail.com</strong>
+            </span>
+            <span class="social-arrow">↗</span>
+          </a>
 
-    <div class="social-links">
-
-        <!-- Email -->
-        <a href="mailto:naysilanazmamaulana@gmail.com" class="social-card">
-            <span class="social-icon">✉️</span>
-
-            <div>
-                <strong>Email</strong>
-                <p>naysilanazmamaulana@gmail.com</p>
-            </div>
-        </a>
-
-
-        <!-- Instagram -->
-        <a 
+          <a
+            class="social-card"
             href="https://www.instagram.com/nazmamln"
             target="_blank"
             rel="noopener noreferrer"
-            class="social-card"
-        >
-            <span class="social-icon">📷</span>
+          >
+            <span class="social-icon">◎</span>
+            <span class="social-copy">
+              <small>INSTAGRAM</small>
+              <strong>@nazmamln</strong>
+            </span>
+            <span class="social-arrow">↗</span>
+          </a>
 
-            <div>
-                <strong>Instagram</strong>
-                <p>@nazmamln</p>
-            </div>
-        </a>
+          <button class="social-card copy-email" id="copyEmail" type="button">
+            <span class="social-icon">⧉</span>
+            <span class="social-copy">
+              <small>SALIN ALAMAT EMAIL</small>
+              <strong>Salin email ke clipboard</strong>
+            </span>
+            <span class="social-arrow">＋</span>
+          </button>
 
-    </div>
+          <p class="copy-feedback" id="copyFeedback" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-</section>
-    </main>
+  <footer class="footer">
+    <a href="#home" class="logo footer-logo">NNM<span>.</span></a>
 
+    <p>© 2026 Naysila Nazma Maulana. All Rights Reserved.</p>
 
-    <!-- Footer -->
-    <footer>
+    <a href="#home" class="back-to-top" id="backToTop">
+      KEMBALI KE ATAS ↑
+    </a>
+  </footer>
 
-        <p>
-            © 2026 Naysila Nazma Maulana.
-            All Rights Reserved.
-        </p>
-
-    </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
